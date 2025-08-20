@@ -91,13 +91,13 @@ const HeroSection = () => {
             </div>
             <div className="flex items-center space-x-6">
               <div className="flex -space-x-2">
-                {[1, 2, 3, 4, 5].map((i) => (
-                  <img
+                {['👤', '👤', '👤', '👤', '👤'].map((emoji, i) => (
+                  <div
                     key={i}
-                    src={`https://i.pravatar.cc/32?img=${i}`}
-                    alt={`Customer ${i}`}
-                    className="w-8 h-8 rounded-full border-2 border-white"
-                  />
+                    className="w-8 h-8 rounded-full border-2 border-white bg-yellow-100 flex items-center justify-center text-sm"
+                  >
+                    {emoji}
+                  </div>
                 ))}
               </div>
               <div className="flex items-center space-x-1">

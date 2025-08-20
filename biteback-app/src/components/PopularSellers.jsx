@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FiStar, FiTrendingUp, FiAward } from 'react-icons/fi';
 import { farmers } from '../data/mockData';
 
 const PopularSellers = () => {
+  const navigate = useNavigate();
   const popularFarmers = farmers.filter(f => f.popular);
 
   return (
@@ -65,7 +67,10 @@ const PopularSellers = () => {
                     ))}
                   </div>
                   
-                  <button className="w-full py-2 bg-farm-green text-white rounded-lg hover:bg-green-700 transition font-medium text-sm">
+                  <button 
+                    onClick={() => navigate(`/farm/${farmer.id}`)}
+                    className="w-full py-2 bg-farm-green text-white rounded-lg hover:bg-green-700 transition font-medium text-sm"
+                  >
                     Shop Now
                   </button>
                 </div>

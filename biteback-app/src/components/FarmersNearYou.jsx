@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FiMapPin, FiStar, FiChevronRight } from 'react-icons/fi';
 import { farmers } from '../data/mockData';
 
 const FarmerCard = ({ farmer }) => {
+  const navigate = useNavigate();
   return (
     <div 
       className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer"
@@ -69,7 +71,10 @@ const FarmerCard = ({ farmer }) => {
           </div>
         </div>
         
-        <button className="mt-4 w-full py-2 bg-farm-green text-white rounded-lg hover:bg-green-700 transition font-medium text-sm flex items-center justify-center group">
+        <button 
+          onClick={() => navigate(`/farm/${farmer.id}`)}
+          className="mt-4 w-full py-2 bg-farm-green text-white rounded-lg hover:bg-green-700 transition font-medium text-sm flex items-center justify-center group"
+        >
           View Farm
           <FiChevronRight className="ml-1 group-hover:translate-x-1 transition" />
         </button>

@@ -1,19 +1,90 @@
 export const farmers = [
   {
     id: 1,
-    name: "Green Valley Farm",
+    name: "Generic Meat Farm",
     owner: "Sarah Johnson",
     location: "2.5 miles away",
     rating: 4.8,
     reviewCount: 127,
-    specialties: ["Organic Vegetables", "Free-Range Eggs", "Raw Honey"],
+    specialties: ["Grass-Fed Beef", "Free-Range Poultry", "Farm-Fresh Eggs"],
     image: "/images/farm_one.avif",
-    description: "Family-owned organic farm specializing in seasonal produce",
+    description: "Family-owned farm specializing in ethically raised meat and poultry",
+    bio: "Sarah has been raising livestock ethically for over 15 years, focusing on sustainable farming practices and providing the highest quality meat and poultry to her local community. All animals are grass-fed and free-range.",
+    responseTime: "Usually responds within 2 hours",
     popular: true,
     products: [
-      { name: "Heirloom Tomatoes", price: "$4.99/lb", available: true },
-      { name: "Fresh Eggs", price: "$6/dozen", available: true },
-      { name: "Raw Honey", price: "$12/jar", available: false }
+      { 
+        id: 1, 
+        name: "Grass-Fed Ground Beef", 
+        price: 12.99, 
+        unit: "lb", 
+        image: "/images/meat.jpg",
+        description: "Premium grass-fed ground beef from our pasture-raised cattle. Perfect for burgers, meatballs, or tacos.",
+        category: "Beef",
+        stock: 20,
+        minOrder: 1,
+        available: true 
+      },
+      { 
+        id: 2, 
+        name: "Ribeye Steaks", 
+        price: 24.99, 
+        unit: "lb", 
+        image: "/images/meat.jpg",
+        description: "Premium grass-fed ribeye steaks with excellent marbling. Cut to order and aged for tenderness.",
+        category: "Beef",
+        stock: 12,
+        minOrder: 1,
+        available: true 
+      },
+      { 
+        id: 3, 
+        name: "Whole Chicken", 
+        price: 18.00, 
+        unit: "each", 
+        image: "/images/meat.jpg",
+        description: "Free-range whole chicken, approximately 4-5 lbs. Raised on pasture with no antibiotics or hormones.",
+        category: "Poultry",
+        stock: 8,
+        minOrder: 1,
+        available: true 
+      },
+      { 
+        id: 4, 
+        name: "Chicken Thighs", 
+        price: 8.99, 
+        unit: "lb", 
+        image: "/images/meat.jpg",
+        description: "Bone-in, skin-on chicken thighs from free-range birds. Dark meat with rich flavor, perfect for roasting.",
+        category: "Poultry",
+        stock: 15,
+        minOrder: 1,
+        available: true 
+      },
+      { 
+        id: 5, 
+        name: "Farm-Fresh Eggs", 
+        price: 6.00, 
+        unit: "dozen", 
+        image: "/images/Brown-eggs.webp",
+        description: "Fresh eggs from happy hens that roam freely on our pastures. Rich, golden yolks and superior taste.",
+        category: "Eggs",
+        stock: 35,
+        minOrder: 1,
+        available: true 
+      },
+      { 
+        id: 6, 
+        name: "Turkey Breast", 
+        price: 16.99, 
+        unit: "lb", 
+        image: "/images/meat.jpg",
+        description: "Bone-in turkey breast from heritage breed turkeys. Perfect for family dinners and special occasions.",
+        category: "Poultry",
+        stock: 6,
+        minOrder: 1,
+        available: true 
+      }
     ]
   },
   {
