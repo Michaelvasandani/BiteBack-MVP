@@ -52,7 +52,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative z-10">
               <img
-                src="https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=800"
+                src="/images/vegetables.webp"
                 alt="Fresh farm produce"
                 className="rounded-2xl shadow-2xl w-full"
               />

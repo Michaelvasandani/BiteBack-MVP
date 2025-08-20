@@ -7,7 +7,7 @@ export const farmers = [
     rating: 4.8,
     reviewCount: 127,
     specialties: ["Organic Vegetables", "Free-Range Eggs", "Raw Honey"],
-    image: "https://images.unsplash.com/photo-1500076656116-558758c991c1?w=400",
+    image: "/images/farm_one.avif",
     description: "Family-owned organic farm specializing in seasonal produce",
     popular: true,
     products: [
@@ -24,7 +24,7 @@ export const farmers = [
     rating: 4.9,
     reviewCount: 89,
     specialties: ["Apples", "Peaches", "Seasonal Fruits"],
-    image: "https://images.unsplash.com/photo-1474440692490-2e83ae13ba29?w=400",
+    image: "/images/farm_2.jpg",
     description: "Premium orchard fruits picked at peak ripeness",
     popular: true,
     products: [
@@ -41,7 +41,7 @@ export const farmers = [
     rating: 4.7,
     reviewCount: 156,
     specialties: ["Raw Milk", "Artisan Cheese", "Grass-Fed Beef"],
-    image: "https://images.unsplash.com/photo-1527153857715-3908f2bae5e8?w=400",
+    image: "/images/farm_3.jpg",
     description: "Traditional dairy farming with grass-fed cattle",
     popular: true,
     products: [
@@ -58,7 +58,7 @@ export const farmers = [
     rating: 4.6,
     reviewCount: 72,
     specialties: ["Herbs", "Microgreens", "Edible Flowers"],
-    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=400",
+    image: "/images/vegetables.webp",
     description: "Specialty herbs and gourmet greens for restaurants and home cooks",
     popular: false,
     products: [
@@ -75,7 +75,7 @@ export const farmers = [
     rating: 4.9,
     reviewCount: 201,
     specialties: ["Pastured Poultry", "Duck Eggs", "Turkey"],
-    image: "https://images.unsplash.com/photo-1518492104633-130d0cc84637?w=400",
+    image: "/images/farm_one.avif",
     description: "Ethically raised poultry on open pastures",
     popular: true,
     products: [
@@ -92,7 +92,7 @@ export const farmers = [
     rating: 4.8,
     reviewCount: 93,
     specialties: ["Strawberries", "Blueberries", "Jam & Preserves"],
-    image: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6?w=400",
+    image: "/images/farm_2.jpg",
     description: "Pick-your-own berries and homemade preserves",
     popular: false,
     products: [
@@ -109,42 +109,42 @@ export const categories = [
     name: "Vegetables",
     icon: "🥬",
     count: 45,
-    image: "https://images.unsplash.com/photo-1540148426945-6cf22a6b2383?w=400"
+    image: "/images/vegetables.webp"
   },
   {
     id: 2,
     name: "Fruits",
     icon: "🍎",
     count: 38,
-    image: "https://images.unsplash.com/photo-1619566636858-adf3ef46400b?w=400"
+    image: "/images/farm_3.jpg"
   },
   {
     id: 3,
     name: "Dairy",
     icon: "🥛",
     count: 22,
-    image: "https://images.unsplash.com/photo-1523473827533-2a64d0d36748?w=400"
+    image: "/images/dairy.jpg"
   },
   {
     id: 4,
     name: "Meat & Poultry",
     icon: "🥩",
     count: 31,
-    image: "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=400"
+    image: "/images/meat.jpg"
   },
   {
     id: 5,
     name: "Eggs",
     icon: "🥚",
     count: 18,
-    image: "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?w=400"
+    image: "/images/Brown-eggs.webp"
   },
   {
     id: 6,
     name: "Honey & Preserves",
     icon: "🍯",
     count: 15,
-    image: "https://images.unsplash.com/photo-1471943311424-646960669fbc?w=400"
+    image: "/images/honey-1296x728-header.webp"
   }
 ];
 
